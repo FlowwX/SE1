@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1497372496 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
