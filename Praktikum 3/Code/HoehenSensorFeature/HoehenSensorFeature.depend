@@ -1,6 +1,45 @@
 # depslib dependency file v1.0
-1497372496 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\main.cpp
+1497474982 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\main.cpp
+	<iostream>
+	"HightSensorStub.h"
+	"HightChecker.h"
+	"States.h"
+
+1497454917 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\hightsensorstub.cpp
+	<cstdlib>
 	<iostream>
 	<fstream>
 	<string>
+	"HightSensorStub.h"
+
+1497466758 c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\hightsensorstub.h
+
+1497475078 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\accept.cpp
+	"States.h"
+
+1497474403 c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\states.h
+	<iostream>
+
+1497475078 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\error.cpp
+	"States.h"
+
+1497473280 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\hightchecker.cpp
+	<iostream>
+	"HightChecker.h"
+	"States.h"
+
+1497473304 c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\hightchecker.h
+
+1497475073 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\idle.cpp
+	"States.h"
+	"HightChecker.h"
+
+1497475078 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\z1.cpp
+	"States.h"
+
+1497475092 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\z2.cpp
+	"States.h"
+
+1497471763 source:c:\users\flori\desktop\se1\praktikum 3\code\hoehensensorfeature\z3.cpp
+	"States.h"
 

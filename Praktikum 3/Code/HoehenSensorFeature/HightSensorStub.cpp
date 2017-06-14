@@ -1,16 +1,24 @@
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+#include <string>
 #include "HightSensorStub.h"
 
 HightSensorStub::HightSensorStub(void){
     index=0;
+    size=0;
     values = new int[INIT_SIZE];
 }
 
 int HightSensorStub::nextValue() {
-	// TODO - implement HightSensorStub::nextValue
-	throw "Not yet implemented";
+	return values[index++];
 }
 
-void HightSensorStub::readValuesFromFile(std::string path) {
+int HightSensorStub::getSize() {
+	return size;
+}
+
+void HightSensorStub::readValuesFromFile(const char* path) {
 
     int index = 0;
 
@@ -20,14 +28,9 @@ void HightSensorStub::readValuesFromFile(std::string path) {
     while (std::getline(file, str))
     {
         std::string subString = str.substr(str.length()-4, 4);
-
-
         values[index] = std::atoi( subString.c_str() );
-
-        std::cout << values[index] << std::endl;
-
         index++;
     }
 
-    std::cout << "Elemente" << index << std::endl;
+    size = index;
 }

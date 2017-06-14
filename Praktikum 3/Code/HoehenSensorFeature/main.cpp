@@ -1,13 +1,17 @@
-#include <cstdlib>
 #include <iostream>
-#include <fstream>
-#include <string>
+#include "HightSensorStub.h"
+#include "HightChecker.h"
+#include "States.h"
 
 
-#define SENSOR_FILE "../../Logs/processlog1.txt"
-#define INIT_SIZE 500
+
+
 
 int main()
 {
-    HightSensorStub.readValuesFromFile(SENSOR_FILE);
+    HightChecker *hc = new HightChecker();
+
+    HcState *s = hc->getState();
+
+    std::cout << s->getName() << std::endl;
 }

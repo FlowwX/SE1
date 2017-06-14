@@ -1,15 +1,17 @@
-#include <string>
+#define INIT_SIZE 500
+#define SENSOR_FILE "../../Logs/processlog1.txt"
 
 class HightSensorStub {
 
 private:
-	int *values[];
+	int *values;
 	int index;
-
-	HightSensorStub(void);
+    int size;
 
 public:
+    HightSensorStub(void);
 	int nextValue();
+	int getSize();
 
-	void readValuesFromFile(std::string);
+	void readValuesFromFile(const char* path);
 };
